@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Constructor</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		 //constructor is used to create and initialize the object
+
+		 class teacher{
+		 	constructor(){
+		 	this.name = "Muna Aden Issak";
+		 	this.title = "Head teacher";
+		 }
+	}
+	var teach = new teacher();
+	document.writeln("Name:" + teach.name + "<br> " + "Tittle:" + teach.title)
+	//using super() to call parent class contructor
+
+	class company{
+		constructor(){
+			this.company = "google";
+		}
+	}
+	class employees extends company{
+		constructor(regNo,name){
+            super();
+            this.regNo = regNo;
+            this.name = name;
+		}
+	}
+	var employee = new employees(100,"Mohamed");
+	document.writeln("<br> Registration number:" + employee.regNo + "<br>" + "Name:" + employee.name + "<br>" + "Company:" + employee.company)
+	//The static keyword is used to creat the static method 
+	//static method can be of any name
+	//If we declare the static method with similar name, the javascript always invoke the last one 
+	//we can use the keyword to call static method within another static method
+
+	class test{
+		static display(){
+			return "<br> this is where the static method is invoked.<br>";
+		}
+		static display(){
+			return "this is where the static method is invoke again.";
+		}
+	}
+	document.writeln(test.display());
+	document.writeln(test.display());
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>javaScript arrays</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var studentsNames = ["Aisha ", "Muna ", "Mohamed ", "Ifrah ",]
+		var loopName;
+		for(loopName=0; loopName<=studentsNames.length; loopName++){
+			document.write(studentsNames[loopName]+"<br>");
+		}
+		document.write("<b> We have the following laptops in the store</b>" +"<br>")
+		var machines = new Array();
+		machines[0] = "Thinkpad";
+		machines[1] = "Acer";
+		machines[2] = "hp";
+		machines[3] = "lenova";
+		var i; 
+		for(i=0; i<=machines.length; i++){
+			document.write(machines[i]+"<br>")
+		}
+		document.write("<b> This are the schools I went to</b>" + "<br>");
+		var schools = new Array("Fuji", "Angelina", "Polotaka", "Greenlight", "Gambella",)
+		var i;
+		for (i=0; i<=schools.length; i++) {
+			document.write(schools[i]+"<br>")
+		}
+	</script>
+
+</body>
+</html>

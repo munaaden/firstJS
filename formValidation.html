@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form Validation using javaScript</title>
+
+	<script type="text/javascript">
+		function validateForm(){
+			var myName = document.myform.myName.value;
+			var myPassword = document.myform.myPassword.value;
+			var myPassword2 = document.myform.myPassword2.value;
+
+			if(myName == null || myName == ""){
+				alert("The name should not be bank");
+				return false;
+			}
+			else if (myPassword.length<8){
+				alert("The password is too short");
+				return true;
+			}
+			 else if (myPassword == myPassword2){
+			 	return true;
+
+			 }
+			 else{
+			 	alert("The two passwords donot match")
+			 	return false;
+			 }
+		}
+	</script>
+</head>
+<body>
+
+	<form name="myform" method="post" action="abc.jsp" onsubmit="return validateForm();">
+		Name:<input type="text" name="myName"><br><br>
+		Password:<input type="password" name="myPassword"><br><br>
+		comfirm password: <input type="password" name="myPassword2"><br><br>
+        <br>
+
+		<input type="submit" name="Register">
+    </form>
+
+</body>
+</html>

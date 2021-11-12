@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript dates and time</title>
+</head>
+<body>
+	<span id="todaysDate"></span>
+	<script type="text/javascript">
+		var day = new Date();
+		
+		document.getElementById('todaysDate') .innerHTML = day
+	</script>
+	<span id="pan"></span>
+	<script type="text/javascript">
+		var allDate = new Date();
+		var exactDate = allDate.getDate();
+		var month = allDate.getMonth();
+		var year = allDate.getFullYear();
+
+		document.getElementById('pan').innerHTML="today's date" + exactDate + "/" +month + "/"  +year
+	</script>
+
+</body>
+</html>

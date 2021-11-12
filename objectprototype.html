@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>javaScript prototype objects</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function employee(firstName, lastName, salary, title){
+          this.firstName = firstName
+          this.lastName = lastName
+          this.salary = salary
+          this.title = title
+       }
+       employee.prototype.fullDetails = function(){
+       	return this.firstName + " " + this.lastName + " " + this.salary + " " + this.title;
+       }
+       var employee1 = new employee("Samira","Addi",74000,"Director");
+       var employee2 = new employee("Zaki","Moha",5400,"Cleaner");
+       var employee3 = new employee("Mohamed","Yussuf",1200,"Chef");
+
+       document.writeln(employee1.fullDetails()+"<br>");
+       document.writeln(employee2.fullDetails()+"<br>");
+       document.writeln(employee3.fullDetails()+"<br>");
+
+       function employer(firstname,lastname){
+       	this.firstname = firstname;
+       	this.lastname = lastname;
+       }
+       employer.prototype.company = "SIR"
+
+       var employe = new employer("kiki","kuku");
+       var employeke = new employer("Kachi","Kunda");
+
+       document.writeln(employe.firstname+ " " + employe.lastname+ " " +  employe.company + "<br>");
+
+       document.writeln("Name:" + employeke.firstname+ " " + employeke.lastname+ " " + "<br> Company: " +employeke.company);
+
+  
+	</script>
+
+</body>
+</html>

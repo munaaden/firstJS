@@ -1,0 +1,61 @@
+<script type="text/javascript">
+	class students{
+		constructor(){
+			var name;
+			var marks;
+		}
+		getName(){
+			return this.name;
+		}
+		setName(name){
+			this.name = name;
+		}
+		getMarks(){
+			return this.marks;
+		}
+		setMarks(marks){
+			this.marks = marks;
+		}
+	}
+	var stdn = new students ();
+	var stdn2 = new students ();
+	var stdn3 = new students ();
+	stdn.setName("Muna Aden");
+	stdn.setMarks(90);
+	stdn2.setName("Samiya Mahad");
+	stdn2.setMarks(60);
+	stdn3.setName("Aisha Abdullahi");
+	stdn3.setMarks(92);
+
+	document.writeln(stdn.getName() + " " + stdn.getMarks() +"<br>");
+    document.writeln(stdn2.getName() + " " + stdn2.getMarks() +"<br>");
+	document.writeln(stdn3.getName() + " " + stdn3.getMarks());
+
+    class students2{
+		constructor(){
+			var name;
+			var marks;
+		}
+		getName(){
+			return this.name;
+		}
+		setName(name){
+			this.name = name;
+		}
+		getMarks(){
+			return this.marks;
+		}
+		setMarks(marks){
+			if(marks<0 || marks>100){
+				alert("You entered invalid marks");
+			}
+			else{
+				this.marks = marks;
+			}
+		}
+	}
+	var stdn = new students2();
+	stdn. setName("Zakariya Ibrahim");
+	stdn.setMarks(678);
+	document.writeln(stdn.getName() + " " + stdn.getMarks());
+</script>
