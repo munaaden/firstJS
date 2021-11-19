@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript map onject</title>
+</head>
+<body>
+
+    <script>
+        var mapObject = new Map();
+        mapObject.set("Muna");
+        mapObject.set("Aishs");
+        document.writeln("Elements before clearing" + mapObject.size + "<br/>")
+        mapObject.delete("Muna");
+        document.writeln( "Elements after clearing " + mapObject.size);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<script type="text/javascript">
+	var set = new Set();
+
+	/*set.add("HTML");
+	set.add("CSS");
+	set.add("Javascript");
+	set.add("Databases");
+
+	for(let element of set) {
+		document.writeln(element + "<br/>");
+	}
+	*/
+
+
+	set.add("Muna").add("Mohamed").add("Aisha").add("Malumalu").add("Ifrax").add("Zakariya").add("Ikram").add("Qasiim").add("Ali").add("Panique");
+	document.writeln("size before deleting object" + set.size);
+	document.writeln(set.has("Ikram"));
+
+	set.delete("Ikram");
+	document.writeln("<br/> size after deleteing object" + set.size);
+	document.writeln(set.has("Ikram"));
+
+	//document.writeln(set.has("Ali"));
+	/*
+	for(let element of set) {
+		document.writeln(element + "<br/>");
+	}
+	*/
+</script>
